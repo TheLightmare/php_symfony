@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Library of Babel{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-[#efe1c4] text-[#965a2b]">
+
+<header class="bg-[#c22f43] p-4">
+    <h1 class="text-3xl font-bold underline text-white">Library</h1>
+</header>
+
+<main class="p-4">
+    {% block body %}{% endblock %}
+</main>
+
+</body>
+</html>
