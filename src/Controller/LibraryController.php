@@ -2,19 +2,17 @@
 // src/Controller/LuckyController.php
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 
-class LibraryController
+class LibraryController extends AbstractController
 {   
-    #[Route('/library')]
-    public function number(): Response
+    #[Route('/', name: "home")]
+    public function index()
     {
-        $number = random_int(0, 100);
-
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
+        return $this->render('index.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
     }
 }
