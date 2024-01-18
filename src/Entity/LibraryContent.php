@@ -28,12 +28,12 @@ class Content
         return $this;
     }
 
-    public function getContenu(): ?string
+    public function getContent(): ?string
     {
         return $this->contenu;
     }
 
-    public function setContenu(?string $contenu): static
+    public function setContent(?string $contenu): static
     {
         $this->contenu = $contenu;
 

@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class LibraryController
 {   
-    #[Route('/')]
+    #[Route('/library')]
     public function number(): Response
     {
         $number = random_int(0, 100);
